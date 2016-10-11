@@ -92,7 +92,6 @@
 	}
 // кнопка очистки блюд
 	document.getElementById('q').onclick = function() {
-		k=0,m=0,g=0,s=0,t=0,u=0,y=0;
 		buffer=[];
 		for(let i=1;i<(this.parentElement.parentElement.children.length-1);i++){
 			this.parentElement.parentElement.children[i].innerHTML ="";
