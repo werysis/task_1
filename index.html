@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task_1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<h1>Создание блюд</h1>
+	</div>
+	<div id="container">
+		<div id="existingIngredients">
+			<h3>Список ингридиентов</h3>
+			
+			<div id="dragObjects">
+				<img src="image/1.png" alt="морковь" ondragstart="onDrag(this, event)" />
+				<img src="image/2.png" alt="яйцо" ondragstart="onDrag(this, event)" />
+				<img src="image/3.png" alt="арбуз" ondragstart="onDrag(this, event)" />
+				<img src="image/4.png" alt="кукуруза" ondragstart="onDrag(this, event)" />
+				<img src="image/5.png" alt="баклажан" ondragstart="onDrag(this, event)" />
+				<img src="image/6.png" alt="виноград" ondragstart="onDrag(this, event)" />
+				<img src="image/7.png" alt="крупа" ondragstart="onDrag(this, event)" />
+				<img src="image/8.png" alt="молоко" ondragstart="onDrag(this, event)" />
+				<img src="image/9.png" alt="лимон" ondragstart="onDrag(this, event)" />
+				<img src="image/10.png" alt="грибы" ondragstart="onDrag(this, event)" />
+				<img src="image/11.png" alt="лук" ondragstart="onDrag(this, event)" />
+				<img src="image/12.png" alt="перец" ondragstart="onDrag(this, event)" />
+				<img src="image/13.png" alt="блендер" ondragstart="onDrag(this, event)" />
+				<img src="image/14.png" alt="яблоко" ondragstart="onDrag(this, event)" />
+				<img src="image/15.png" alt="банан" ondragstart="onDrag(this, event)" />
+				<img src="image/16.png" alt="сельдерей" ondragstart="onDrag(this, event)" />
+				<button id="s"onclick="openbox('help'); return false">Открыть таблицу крафтинга</button>
+				<div id="help">
+				<table>
+				<tr>
+					<td>предмет1</td>
+					<td>предмет2</td>
+					<td>предмет3</td>
+					<td>рецепт</td>
+				</tr>
+				<tr>
+					<td>молоко</td>
+					<td>банан</td>
+					<td>блендер</td>
+					<td>молочный коктель</td>
+				</tr>
+				<tr>
+					<td>молоко</td>
+					<td>банан</td>
+					<td>крупа</td>
+					<td>смузи</td>
+				</tr>
+				<tr>
+					<td>лук</td>
+					<td>грибы</td>
+					<td>-</td>
+					<td>жареные грибы</td>
+				</tr>
+				<tr>
+					<td>сельдерей</td>
+					<td>морковь</td>
+					<td>баклажан</td>
+					<td>салат</td>
+				</tr>
+				<tr>
+					<td>кукуруза</td>
+					<td>яйцо</td>
+					<td>крупа</td>
+					<td>лепешка</td>
+				</tr>
+				<tr>
+					<td>арбуз</td>
+					<td>лимон</td>
+					<td>блендер</td>
+					<td>сок</td>
+				</tr>
+				<tr>
+					<td>перец</td>
+					<td>морковь</td>
+					<td>грибы</td>
+					<td>фаршированный перец</td>
+				</tr>
+				</table>
+				</div>
+  </div>
+		</div>
+		<div id="poleCrafting">
+			<h3>Кухонный стол</h3>
+			<h5>перетащите элементы для готовки</h5>
+				<div id="dropTarget" ondrop="onDrop(this, event)" ondragenter="cancel(event)" ondragover="cancel(event)">
+				</div>
+		</div>
+		<div id="meals">
+			<h3>Полученные блюда</h3>
+			
+			<div id="moloko" class="items_recip">
+			</div>
+			<div id="cmouzi" class="items_recip">
+			</div>
+			<div id="mushrooms" class="items_recip">
+			</div>
+			<div id="salad" class="items_recip">
+			</div>
+			<div id="cake" class="items_recip">
+			</div>
+			<div id="juice" class="items_recip">
+			</div>
+			<div id="pepper" class="items_recip">
+			</div>
+			<div id="para1">
+				<button id="q">тыкай для очистки блюд</button>
+				<button id="k">тыкай для очистки плиты</button>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<p id="footer-text">Copyringht&copy;2016 Werysis</br></p>
+		
+	</div>
+	<script src="script.js"></script>
+	
+</body>
+</html>
