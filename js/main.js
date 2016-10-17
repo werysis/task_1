@@ -76,14 +76,16 @@
 		return false;
 	}
 	// кнопка очистки блюд
-	document.getElementById('clearTable').onclick = function() {
+	var cash=document.getElementById('clearTable');
+	cash.onclick = function() {
 		buffer=[];
 		for(let i=1;i<(this.parentElement.children.length-2);i++){
 			this.parentElement.children[i].innerHTML ="";
 		}
 	}
 // кнопка очистки плиты
-	document.getElementById('clearCook').onclick = function() {
+	var cash2=document.getElementById('clearCook');
+	cash2.onclick = function() {
 		buffer=[];
 	}
 	var objeref = document.querySelectorAll(".objects");
