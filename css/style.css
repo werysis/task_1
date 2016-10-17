@@ -1,0 +1,109 @@
+html,body {
+	color: #000;
+	background: #fff;
+	margin: 0;
+	height: 100%;
+	width:100%;
+	padding: 0;
+	display: table;
+}
+
+h2,h3,p{
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+a.button{
+	text-decoration: none;
+	position: relative;
+	color: green;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.35em;
+	margin-left:4%;
+	
+}
+
+.href{
+	display: block;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	height:100%;
+}
+#header {
+	height: 10%;
+	background: #fc0;
+	display: table-row;
+	
+}
+
+#container {
+	height:70%;
+}
+
+#poleCrafting,#meals,#dragObjects{
+	height: 400px;
+	background: #eee;
+}
+
+#dragObjects {
+	width: 33%;
+	float: left;
+	margin-left:2%;
+	overflow-x: auto;
+	cursor: pointer;
+}
+
+.objects {
+		width: 110px; 
+		min-width:110px;
+		height: 110px;
+		float: left;
+		background: #c0f;
+		margin: 1% 3% 1% 3%;
+		
+}
+
+#meals {
+	width: 33%;
+	float: right;
+	margin-right:2%;
+	overflow-x: auto;
+}
+
+.items_recip {
+	width: 110px; 
+	min-width:110px;
+	height: 110px;
+	float: left;
+	background: black;
+	margin: 1% 3% 1% 3%;
+}
+
+#poleCrafting {
+	margin: 7% 38% 0 38%;
+	position: relative;
+}
+.pole {
+	width:100%;
+	height: 10%;
+	padding-top:2%;
+	float: left;
+}
+#dropTarget{
+	background-image: url(../img/cook.png);
+	width:95%;
+	min-height: 90%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+}
+
+
+#footer {
+	height: 10%;
+	width:100%;
+	display: table-row;
+	color: #fff;
+	background: #000;
+	clear: both;
+}
